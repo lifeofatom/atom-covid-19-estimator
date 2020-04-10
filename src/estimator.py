@@ -57,7 +57,5 @@ def estimator(data):
       "data":data,
       "estimate":estimate
     }
-  print(data)
-  return data
 
-estimator(data)
+  return data
