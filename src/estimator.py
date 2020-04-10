@@ -56,5 +56,8 @@ def estimator(data):
       "impact":impact,
       "severeImpact": severeImpact
     }
+  print(data)
 
   return data
+
+estimator(data)
