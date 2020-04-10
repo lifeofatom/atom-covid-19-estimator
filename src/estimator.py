@@ -48,13 +48,16 @@ def worseImpact(data):
 
 def estimator(data):
   severeImpact = worseImpact(data)
-    impact = normalImpact(data)
-    estimate = {
-        "impact":impact,
-        "severeImpact": severeImpact
+  impact = normalImpact(data)
+  estimate = {
+      "impact":impact,
+      "severeImpact": severeImpact
     }
-    data = {
-        "data":data,
-        "estimate":estimate
+  data = {
+      "data":data,
+      "estimate":estimate
     }
+  print(data)
   return data
+
+estimator(data)
