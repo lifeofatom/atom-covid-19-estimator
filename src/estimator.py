@@ -81,6 +81,9 @@ def moneySpent(data, infectionsByRequestedTime):
 
 
 
+
+
+
 def normalImpact(data):
     currentlyInfected = data['reportedCases'] * 10
     infectionsByRequestedTime = infectionTime(data, currentlyInfected)
