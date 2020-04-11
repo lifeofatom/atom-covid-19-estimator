@@ -71,7 +71,7 @@ def moneySpent(data, infectionsByRequestedTime):
   avgIncomePopulation = dataRegions['avgDailyIncomePopulation']
   period = timeFrame(data)
   value = (avgIncome * avgIncomePopulation * infectionsByRequestedTime)/period
-  amount = round(value, 2)
+  amount = math.trunc(value)
   return amount
 
 
