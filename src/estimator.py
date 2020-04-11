@@ -1,9 +1,10 @@
 region = {
     "name":"Africa",
     "avgAge":19.7,
-    "avgDailyIncomeInUSD": 2,
+    "avgDailyIncomeInUSD": 5,
     "avgDailyIncomePopulation":0.71
 }
+
 
 periodType = "days"
 timeToElapse = 58
@@ -19,6 +20,8 @@ data = {
     "population":population,
     "totalHospitalBeds":totalHospitalBeds
 }
+
+
 
 def infectionTime(data, currentlyInfected):
     integralPeriod = int((data['timeToElapse'])/3)
