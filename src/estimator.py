@@ -56,12 +56,12 @@ def requestedBeds(data, severeCasesByRequestedTime):
   return cases
 
 def icuRequestTime(infectionsByRequestedTime):
-  cases = round(0.05 * infectionsByRequestedTime)
+  cases = 0.05 * infectionsByRequestedTime
   cases = math.trunc(cases)
   return cases
 
 def ventilatorRequestTime(infectionsByRequestedTime):
-  cases = round(0.02 * infectionsByRequestedTime)
+  cases = 0.02 * infectionsByRequestedTime
   cases =math.trunc(cases)
   return cases
 
@@ -73,6 +73,10 @@ def moneySpent(data, infectionsByRequestedTime):
   value = avgIncome * avgIncomePopulation * period * infectionsByRequestedTime
   amount = round(value, 2)
   return amount
+
+sis = 2
+print(round(sis, 2))
+print()
 
 
 
