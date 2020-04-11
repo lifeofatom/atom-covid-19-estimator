@@ -51,7 +51,7 @@ def severeCases(infectionsByRequestedTime):
   return cases
 
 def requestedBeds(data, severeCasesByRequestedTime):
-  totalSevereBeds = round(0.35 * data["totalHospitalBeds"])
+  totalSevereBeds = 0.35 * data["totalHospitalBeds"]
   cases = math.trunc(totalSevereBeds - severeCasesByRequestedTime)
   return cases
 
